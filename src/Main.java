@@ -18,26 +18,25 @@ public class Main {
             System.out.print(numbers[index] + ", ");
         }
 
-        for (double i : secrets) {
-            if (i != secrets [secrets.length - 1]) {
-                System.out.print(i + ", ");;
+        for (double variant : secrets) {
+            if (variant != secrets [secrets.length - 1]) {
+                System.out.print(variant + ", ");;
             } else {
-                System.out.println(i);
+                System.out.println(variant);
             }
         }
 
-        for (int i : years) {
-            if (i != years [years.length - 1]) {
-                System.out.print(i + ", ");
+        for (int variant : years) {
+            if (variant != years [years.length - 1]) {
+                System.out.print(variant + ", ");
             } else {
-                System.out.println(i);
+                System.out.println(variant);
             }
         }
 
         // Задание 3
         System.out.println("Задача №3");
-        for (int index = 2; index < numbers.length && index >= 0; index --) {
-            numbers[index] = index + 1;
+        for (int index = numbers.length - 1; index >= 0; index --) {
             if (index != 0) {
                 System.out.print(numbers[index] + ", ");
             } else {
@@ -45,7 +44,7 @@ public class Main {
             }
         }
 
-        for (int i = secrets.length - 1; i < secrets.length && i >= 0; i --) {
+        for (int i = secrets.length - 1; i >= 0; i --) {
             if (i != 0) {
             System.out.print(secrets [i] + ", ");
             } else {
@@ -53,7 +52,7 @@ public class Main {
             }
         }
 
-        for (int i = years.length - 1; i < years.length && i >= 0; i --) {
+        for (int i = years.length - 1; i >= 0; i --) {
             if (i != 0) {
                 System.out.print(years [i] + ", ");
             } else {
@@ -65,12 +64,10 @@ public class Main {
         // Задание 4
         System.out.println("Задача №4");
         for (int index = 0; index < numbers.length; index ++) {
-            numbers[index] = index + 1;
             if (numbers[index] % 2 != 0) {
                 numbers[index] = numbers[index] + 1;
-                System.out.print(numbers[index] + " ");
-            } else {
-                System.out.print(numbers[index] + " ");
             }
+                System.out.print(numbers[index] + " ");
+
     }
 }}
